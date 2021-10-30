@@ -1,0 +1,92 @@
+border-bottom: thin solid #eee;
+(borde sacado de Ml)
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:#E9ECF4 ;
+    color: #000;
+    font-family: 'Roboto', 'san-serif';
+}
+/* Css de todo el documento html */
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+/* Le damos color al documento */
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+/* Css para encabezado */
+.contenedor .header{
+    background:#12203E ;
+    color:#fff ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/* Dos columnas al contenido */
+.contenedor .contenido{
+    grid-column: span 2;
+}
+/* Se utiliza flex box y Grid */
+.contenedor .sidebar{
+    grid-column: 3/4;
+    background: #fAA43D;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-row: span 2;
+}
+/* display: flex; text-align: center; justify-content: 
+center; align-items: center; (centra contenido)*/
+.contenedor .widgets-1,
+.contenedor .widgets-2{
+background: #55a8fd;
+color: #fff;
+text-align: center;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.contenedor .footer{
+    background: #12203E;
+    color: #fff;
+    grid-column: span 3;
+}
+/* con los media query adaptamos hacemos el responsivo */
+@media screen and (max-width: 768px){
+  .contenedor .contenido{
+      grid-column: 1/-1;
+
+  }
+
+  .contenedor .sidebar{
+    grid-column: 1/-1;
+  }
+
+  .contenedor .widgets-1{
+      grid-column: span 2;
+  }
+
+
+}
