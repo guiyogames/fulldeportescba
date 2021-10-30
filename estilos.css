@@ -80,12 +80,17 @@ input[type="submit"] {
   text-align: center;
   align-items: center;
 }
+/* foto deportistas */
+.sport_boys{
+  width: 494px;
+  height: 332px;
+}
 /* tamaño zapatillas */
 .img {
   width: 200px;
   height: 200px;
 }
-
+/* nosotros */
 .img2 {
   width: 580px;
   height: 399px;
@@ -243,4 +248,16 @@ align-items: center; */
       "widgets-2  widgets-2  widgets-2"
       "footer      footer    footer";
   }
+/* foto deportistas */
+  .sport_boys{
+    width: 247px;
+    height: 160px;
+  }
+/* nosotros */
+  .img2 {
+    width: 290px;
+    height: 200px;
+  }
+  
+
 }
