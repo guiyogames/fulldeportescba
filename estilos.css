@@ -79,6 +79,7 @@ input[type="submit"] {
 .img_1 {
   text-align: center;
   align-items: center;
+  
 }
 /* foto deportistas */
 .sport_boys{
@@ -95,6 +96,18 @@ input[type="submit"] {
   width: 580px;
   height: 399px;
 }
+/* articulos de deporte */
+.img3{
+  padding-top: 15px;
+  width: 200px;
+  height: 200px;
+}
+/* pelota de rugby */
+.img4{
+  padding-top: 15px;
+  width: 130px;
+  height: 130px;
+}
 
 h3 {
   text-align: center;
@@ -104,25 +117,31 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
-/* imagenes */
+/* parrafo de imagen */
 .zapas {
   margin-top: -50px;
+  font-size: 18px;
+  text-align: center;
   border-bottom: thin solid #eee;
+  
 }
-
+/* parrafo de imagen */
 .zapas_2 {
   margin-top: -30px;
+  font-size: 18px;
+  text-align: center;
   border-bottom: thin solid #eee;
+  
 }
 /* foto fútbol */
 .futbol {
-  width: 160px;
-  height: 150px;
+  width: 140px;
+  height: 130px;
 }
 /* foto basket */
 .basket {
-  width: 160px;
-  height: 150px;
+  width: 140px;
+  height: 130px;
 }
 
 /* Ul página otros*/
@@ -142,6 +161,14 @@ ul li a {
   color: #000;
 }
 /* tamaño css para productos */
+
+p{
+  width: 90%;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px 20px 20px 20px;
+}
+
 .p .img3 {
   width: 190px;
   height: 193px;
@@ -263,9 +290,15 @@ align-items: center; */
     width: 150px;
     height: 150px;
   }
+/* artículos deportivos */
+  .img3{
+    width: 120px;
+    height: 120px;
+  }
+ 
   /* foto fútbol */
   .futbol {
-    width: 120px;
+    width: 130px;
     height: 120px;
   }
   /* foto basket */
@@ -273,4 +306,10 @@ align-items: center; */
     width: 120px;
     height: 120px;
   }
+
+  .img4{
+    width: 90px;
+    height: 90px;
+  }
+
 }
