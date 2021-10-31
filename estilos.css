@@ -88,7 +88,7 @@ input[type="submit"] {
 }
 /* tamaño zapatillas */
 .img {
-  width: 200px;
+  width: 250px;
   height: 200px;
 }
 /* nosotros */
@@ -287,7 +287,7 @@ align-items: center; */
   }
   /* zapatillas */
   .img {
-    width: 150px;
+    width: 200px;
     height: 150px;
   }
 /* artículos deportivos */
