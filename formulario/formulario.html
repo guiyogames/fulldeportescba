@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ejercicio DOM, Eventos y funciones</title>
+        <link rel="stylesheet" href="formulario.estilos.css">
+		
+	</head>
+	<body>
+		<!--
+			1. Formulario campos: Nombre, Apellidos y edad
+			2. Boton de enviar el formulario: eventos submit
+			3. Mostrar datos por pantalla 
+			4. Validación del formulario
+		-->
+		<h1>Ejercicio DOM, Eventos y Funciones</h1>
+
+			<form action="#" class="form" method="POST" id="formulario" onsubmit="return false;">
+				<label for="nombre">Nombre:</label> <br/>
+				<input type="text" name="nombre" id="nombre" /> <br/><br>
+				<p><span id="error_nombre"></span></p>
+
+				<label for="apellidos">Apellido:</label> <br/>
+				<input type="text" name="apellido" id="apellidos"/> <br/>
+				<p><span id="error_apellidos"></span></p><br>
+
+				<label for="edad">Edad:</label> <br/>
+				<input type="number" name="edad" id="edad" /> <br/>
+				<p><span id="error_edad"></span></p><br>
+				
+                <label for="mensaje">Mensaje:</label> <br/>
+				<textarea name="mensaje" id="mensaje"></textarea>
+				<p><span id="error_mensaje"></span></p>
+				<br>
+				<input type="submit" value="Enviar" id="submit" />
+
+			</form>
+	
+<!--Este div class "box dashed" representa 
+parte del cuadro creado en el DOM-->
+<!--Clase capturada con el .box{-->
+   
+        
+    </body>
+    <script type="text/javascript" src="formulario.js"></script>
+</html>
