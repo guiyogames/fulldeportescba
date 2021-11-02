@@ -72,13 +72,19 @@ label {
 
 textarea {
   width: 60%;
-  height: 32px;
+  height: 100px;
 }
+
+.p_error{
+ font-size: 16px;
+}
+
 /* boton de envío */
 input[type="submit"] {
   width: 40%;
   height: 22px;
   border: 1px solid #12203e;
+ 
 }
 /* clase del div */
 .img_1 {

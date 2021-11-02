@@ -1,21 +1,24 @@
 'use strict'
 
-window.addEventListener('load', function(){
+window.addEventListener('load', ()=>{
 	console.log("DOM cargado!!");
-
+	
+	
 	var formulario = document.querySelector("#formulario");
-	var box_dashed = document.querySelector(".dashed");
-	box_dashed.style.display = "none";
+
+	var nombre = document.querySelector("#nombre").value;
+	var apellidos = document.querySelector("#apellidos").value;
+	var edad = parseInt(document.querySelector("#edad").value);
+	var mensaje = document.querySelector("#mensaje").value;
+		
+
 
 	formulario.addEventListener('submit', function(){
 		console.log("Evento submit capturado");
+		alert("formulario envíado con éxito");
 
-		var nombre = document.querySelector("#nombre").value;
-		var apellidos = document.querySelector("#apellidos").value;
-		var edad = parseInt(document.querySelector("#edad").value);
-		var mensaje = document.querySelector("#mensaje").value;
 		
-
+		console.log(nombre);
 		if(nombre.trim() == null || nombre.trim().length == 0){
 			alert("El nombre no es válido");
 			document.querySelector("#error_nombre").innerHTML = "El nombre no es valido";
@@ -25,6 +28,7 @@ window.addEventListener('load', function(){
 			document.querySelector("#error_nombre").style.display = "none";
 		}
 
+		console.log(apellidos);
 		if(apellidos.trim() == null || apellidos.trim().length == 0){
 			alert("El apellido no es válido");
 			document.querySelector("#error_apellidos").innerHTML = "El apellido no es valido";
@@ -39,7 +43,7 @@ window.addEventListener('load', function(){
 			document.querySelector("#error_edad").style.color ="red";
 			return false;
 		}
-
+        console.log(mensaje);
 		if(mensaje.trim() == null || mensaje.trim().length == 0){
 			alert("El mensaje no es válido");
 			document.querySelector("#error_mensaje").innerHTML = "El mensaje no es valido";
@@ -47,17 +51,6 @@ window.addEventListener('load', function(){
             return false;
 		}
 
-		box_dashed.style.display = "block";
-
-		var p_nombre = document.querySelector("#p_nombre span");
-		var p_apellidos = document.querySelector("#p_apellidos span");
-		var p_edad = document.querySelector("#p_edad span");
-		var p_mensaje = document.querySelector("#p_mensaje");
-
-		p_nombre.innerHTML = nombre;
-		p_apellidos.innerHTML = apellidos;
-		p_edad.innerHTML = edad;
-		p_mensaje.innerHTML = mensaje; 
 
 		/*
 		var datos_usuario = [nombre, apellidos, edad];

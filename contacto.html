@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?-family=Roboto" rel="stylesheet">
+    <script src="formulario.js"></script>
     <title>Full deportes</title>
     <link rel="stylesheet" href="estilos.css">
+    
 </head>
 <body>
 <!--contenedor del documento-->
@@ -38,32 +40,28 @@
       <h1>Contactenos</h1>
       <br>
         
+      <form action="#" class="form" method="POST" id="formulario" onsubmit="return false;">
+				<label for="nombre">Nombre:</label> <br/>
+				<input type="text" name="nombre" id="nombre" /> <br/>
+				<p class="p_error"><span id="error_nombre"></span></p>
 
-<form action="" class="form">
+				<label for="apellidos">Apellido:</label> <br/>
+				<input type="text" name="apellido" id="apellidos"/> <br/>
+				<p class="p_error"><span id="error_apellidos"></span></p><br>
 
-<label for="nombre">Nombre</label>
-<br>
-<input type="text" placeholder="su nombre">
-<br><br>
+				<label for="edad">Edad:</label> <br/>
+				<input type="number" name="edad" id="edad" /> <br/>
+				<p class="p_error"><span id="error_edad"></span></p><br>
+				
+                <label for="mensaje">Mensaje:</label> <br/>
+				<textarea name="mensaje" id="mensaje"></textarea>
+				<p class="p_error"><span id="error_mensaje"></span></p>
+				<br>
+				<input type="submit" value="Enviar" id="submit" />
 
-<label for="apellido">Apellido</label>
-<br>
-<input type="text" placeholder="su apellido">
-<br><br>
-<label for="Edad">Edad</label>
-<br>
-<input type="text" placeholder="su edad">
-<br><br>
-<label for="mensaje">Mensaje</label>
-<br>
-<textarea>Mensaje</textarea>
-<br>
-<input type="submit" value="enviar">
+			</form>
 
-
-</form>
-
-<p class="email">email: fulldeportes@gmail.com</p>
+       <p class="email">email: fulldeportes@gmail.com</p>
 
 
      </main>
@@ -91,6 +89,6 @@
   </footer>
   <!--fin div class contenedor-->  
     </div>
-  
+    <script src="formulario.js"></script>
 </body>
 </html>

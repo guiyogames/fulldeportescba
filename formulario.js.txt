@@ -1,0 +1,50 @@
+var formulario = document.querySelector("#formulario"); 
+
+
+var nombre = document.querySelector("#nombre").value; 
+var apellidos = document.querySelector("#apellido").value;
+var edad = parseInt(document.querySelector("#edad").value);
+var mensaje = document.querySelector("#mensaje").value; 
+
+var mensajesError = document.querySelector("#error_nombre");
+var mensajesError_1 = document.querySelector("#error_apellido");
+var mensajesError_2 = document.querySelector("#error_textarea");
+
+if(nombre.trim()== null || nombre.trim().length == 0){
+  alert("El nombre no es valido");
+  // Linea de código para nombre no válido.
+  mensajesError.innerHTML="El nombre no es valido";
+  mensajesError.style.color="red"; 
+  return false;
+}else{
+  // Linea de código para que el display se muestre oculto.
+  document.querySelector("#error_nombre").style.display="none";
+}
+  if(apellidos.trim() == null || apellidos.trim().length == 0){
+    alert("El Apellido no es valido");
+    document.querySelector("#error_apellido").innerHTML="El apellido no es valido";
+    mensajesError_1.style.color="red"; 
+  }else{
+    document.querySelector("#error_apellido").style.display="none"; 
+
+}
+//para mensaje 
+if(mensaje.trim() == null || mensaje.trim().length == 0){
+  alert("El Mensaje no es valido");
+  document.querySelector("#error_textarea").innerHTML="El mensaje no es valido";
+  mensajesError_2.style.color="red"; 
+}else{
+  document.querySelector("#error_textarea").style.display="none";
+
+}
+
+console.log(edad);
+  if(edad == null || edad <=0 || isNaN(edad)){
+  alert("La edad no es valida");
+  return false;
+}
+
+// Formulario capturado para evento submit 
+formulario.addEventListener('submit', function(){
+  console.log("Evento Submit capturado");
+  alert("Evento Submit capturado");
