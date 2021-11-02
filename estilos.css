@@ -40,7 +40,6 @@ body {
   
 }
 
-/* Css para formulario */
 
 h1 {
   text-align: center;
@@ -50,11 +49,12 @@ h1 {
   background: #ccc;
   font-size: 15px;
   width: 80%;
+  height: 80%;
   margin: 20px 20px 20px 20px;
   padding-top: 10px;
   padding-block-end: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 5px;
 }
 
@@ -160,7 +160,9 @@ h3 {
 ul {
   text-align: center;
   list-style: none;
+ 
 }
+
 
 ul li {
   display: block;

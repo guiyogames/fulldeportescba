@@ -40,7 +40,7 @@
       <h1>Contactenos</h1>
       <br>
         
-      <form action="#" class="form" method="POST" id="formulario" onsubmit="return false;">
+      <form action="enviar.php" class="form" method="POST" id="formulario" onsubmit="return false;">
 				<label for="nombre">Nombre:</label> <br/>
 				<input type="text" name="nombre" id="nombre" /> <br/>
 				<p class="p_error"><span id="error_nombre"></span></p>
@@ -48,6 +48,10 @@
 				<label for="apellidos">Apellido:</label> <br/>
 				<input type="text" name="apellido" id="apellidos"/> <br/>
 				<p class="p_error"><span id="error_apellidos"></span></p><br>
+
+        <label for="email">Email:</label> <br/>
+				<input type="text" name="email" id="email"/> <br/>
+				<p class="p_error"><span id="error_email"></span></p><br>
 
 				<label for="edad">Edad:</label> <br/>
 				<input type="number" name="edad" id="edad" /> <br/>
