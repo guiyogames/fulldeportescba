@@ -17,6 +17,7 @@ window.addEventListener('load', ()=>{
 		var email = document.querySelector("#email").value;
 		var edad = parseInt(document.querySelector("#edad").value);
 		var mensaje = document.querySelector("#mensaje").value;
+		var envio_ok = document.querySelector("#submit").value;
 			
 		
 		console.log(nombre);
@@ -40,7 +41,7 @@ window.addEventListener('load', ()=>{
 		console.log(email);
 		if(email.trim() == null || email.trim().length == 0){
 			alert("El email no es válido");
-			document.querySelector("#error_email").innerHTML = "El el email no es valido";
+			document.querySelector("#error_email").innerHTML = "El email no es valido";
 			document.querySelector("#error_email").style.color ="red";
             return false;
 		}
@@ -57,11 +58,14 @@ window.addEventListener('load', ()=>{
 			alert("El mensaje no es válido");
 			document.querySelector("#error_mensaje").innerHTML = "El mensaje no es valido";
 			document.querySelector("#error_mensaje").style.color ="red";
-            return false;
+			return false;
 		}
-
-    	    
-		/*
+		
+			if (envio_ok) {
+				alert('Enviado con éxito');
+			}
+	
+				/*
 		var datos_usuario = [nombre, apellidos, edad];
 		var indice;
 		for(indice in datos_usuario){

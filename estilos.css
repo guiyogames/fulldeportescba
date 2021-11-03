@@ -46,13 +46,13 @@ h1 {
 }
 /* css formulario */
 .form {
-  background: #ccc;
+  background: rgb(231, 231, 231);
   font-size: 15px;
   width: 80%;
-  height: 80%;
+  height: 75%;
   margin: 20px 20px 20px 20px;
-  padding-top: 10px;
-  padding-block-end: 10px;
+  padding-top: 20px;
+  /* padding-block-end: 10px; */
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 5px;
@@ -68,6 +68,7 @@ label {
   width: 60%;
   height: 22px;
   font-family: Arial, Helvetica;
+  font-size: 16px;
 }
 
 textarea {
@@ -88,6 +89,9 @@ input[type="submit"] {
   width: 60%;
   height: 22px;
   border: 1px solid #12203e;
+  padding-inline-end: 20px;
+  margin-block-end: 20px;
+  background: #ccc;
  
 }
 /* clase del div */
