@@ -73,6 +73,10 @@ label {
 textarea {
   width: 60%;
   height: 100px;
+  min-width: 298px;
+  max-width: 298px;
+  min-height: 100px;
+  max-height: 200px;
 }
 
 .p_error{
@@ -81,7 +85,7 @@ textarea {
 
 /* boton de envío */
 input[type="submit"] {
-  width: 40%;
+  width: 60%;
   height: 22px;
   border: 1px solid #12203e;
  
@@ -127,6 +131,7 @@ h3 {
 .precio {
   text-align: center;
   font-weight: bold;
+  margin-top: 10px;
 }
 /* parrafo de imagen */
 .zapas {

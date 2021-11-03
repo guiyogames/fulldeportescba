@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?-family=Roboto" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?-family=Roboto"
+      rel="stylesheet"
+    />
     <script src="formulario.js"></script>
     <title>Full deportes</title>
-    <link rel="stylesheet" href="estilos.css">
-    
-</head>
-<body>
-<!--contenedor del documento-->
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!--contenedor del documento-->
     <div class="contenedor">
-        <!--Encabezado-->
-        <header class="header">
-     <nav>
-<ul class="ul">
+      <!--Encabezado-->
+      <header class="header">
+        <nav>
+          <ul class="ul">
+            <li class="li"><a href="index.html">Home</a></li>
 
-<li class="li"><a href="index.html">Home</a></li>
+            <li class="li"><a href="nosotros.html">Nosotros</a></li>
 
-<li class="li"><a href="nosotros.html">Nosotros</a></li>
+            <li class="li"><a href="#">Contacto</a></li>
 
-<li class="li"><a href="#">Contacto</a>
+            <li class="li"><a href="productos.html">Productos</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- contenido, se puede usar main o div-->
+      <main class="contenido">
+        <h1>Contactenos</h1>
+        <br />
 
-<li class="li"><a href="otros.html">Productos</a>
+        <form
+          action="mailto:argentina_02@hotmail.com"
+          class="form"
+          method="POST"
+          enctype="text/plain"
+          id="formulario"
+          onsubmit="return false;"
+        >
+          <label for="nombre">Nombre:</label> <br />
+          <input type="text" name="nombre" id="nombre" /> <br />
+          <p class="p_error"><span id="error_nombre"></span></p>
 
-    
-</li>
+          <label for="apellidos">Apellido:</label> <br />
+          <input type="text" name="apellido" id="apellidos" /> <br />
+          <p class="p_error"><span id="error_apellidos"></span></p>
+          <br />
 
+          <label for="email">Email:</label> <br />
+          <input type="text" name="email" id="email" /> <br />
+          <p class="p_error"><span id="error_email"></span></p>
+          <br />
 
-</ul>
+          <label for="edad">Edad:</label> <br />
+          <input type="number" name="edad" id="edad" /> <br />
+          <p class="p_error"><span id="error_edad"></span></p>
+          <br />
 
-</nav>
+          <label for="mensaje">Mensaje:</label> <br />
+          <textarea name="mensaje" id="mensaje"></textarea>
+          <p class="p_error"><span id="error_mensaje"></span></p>
+          <br />
+          <input
+            onclick="window.location.href = 'index.html';"
+            type="submit"
+            value="Enviar"
+          />
 
-        </header>
-<!-- contenido, se puede usar main o div-->
-     <main class="contenido">
-      <h1>Contactenos</h1>
-      <br>
-        
-      <form action="mailto:argentina_02@hotmail.com" class="form" method="POST" enctype="text/plain"
-       id="formulario" onsubmit="return false;">
-				<label for="nombre">Nombre:</label> <br/>
-				<input type="text" name="nombre" id="nombre" /> <br/>
-				<p class="p_error"><span id="error_nombre"></span></p>
+          <!-- <input type="submit" value="Enviar" id="submit" /> -->
+        </form>
 
-				<label for="apellidos">Apellido:</label> <br/>
-				<input type="text" name="apellido" id="apellidos"/> <br/>
-				<p class="p_error"><span id="error_apellidos"></span></p><br>
-
-        <label for="email">Email:</label> <br/>
-				<input type="text" name="email" id="email"/> <br/>
-				<p class="p_error"><span id="error_email"></span></p><br>
-
-				<label for="edad">Edad:</label> <br/>
-				<input type="number" name="edad" id="edad" /> <br/>
-				<p class="p_error"><span id="error_edad"></span></p><br>
-				
-                <label for="mensaje">Mensaje:</label> <br/>
-				<textarea name="mensaje" id="mensaje"></textarea>
-				<p class="p_error"><span id="error_mensaje"></span></p>
-				<br>
-				<input type="submit" value="Enviar" id="submit" />
-
-			</form>
-
-       <p class="email">email: fulldeportes@gmail.com</p>
-
-
-     </main>
-    <!--comiensa el aside-->
-   <aside class="sidebar">
-     <div class="img_1">
-      <img src="imagenes/tenis_y_futbol.jpg" alt="">
-
-     </div>
-     
-    </aside>
-  <!--comiensa el widgets-1-->
-   <div class="widgets-1">
-    <div class="img_1"><img src="imagenes/rafa_tenis.jpg">
-    </div>
-    </div>
-  <!--comiensa el widgets-2-->
-   <div class="widgets-2">
-    <div class="img_1"><img src="imagenes/messi_balon.jpg">
-    </div>
-   </div>
-  <!--footer-->
-  <footer class="footer">
-    <h3>Guillermo Visintini desarrolo web&copy;</h3>
-  </footer>
-  <!--fin div class contenedor-->  
+        <p class="email">email: fulldeportes@gmail.com</p>
+      </main>
+      <!--comiensa el aside-->
+      <aside class="sidebar">
+        <div class="img_1">
+          <img src="imagenes/tenis_y_futbol.jpg" alt="" />
+        </div>
+      </aside>
+      <!--comiensa el widgets-1-->
+      <div class="widgets-1">
+        <div class="img_1"><img src="imagenes/rafa_tenis.jpg" /></div>
+      </div>
+      <!--comiensa el widgets-2-->
+      <div class="widgets-2">
+        <div class="img_1"><img src="imagenes/messi_balon.jpg" /></div>
+      </div>
+      <!--footer-->
+      <footer class="footer">
+        <h3>Guillermo Visintini desarrolo web&copy;</h3>
+      </footer>
+      <!--fin div class contenedor-->
     </div>
     <script src="formulario.js"></script>
-</body>
+  </body>
 </html>

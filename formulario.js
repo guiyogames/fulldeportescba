@@ -9,6 +9,7 @@ window.addEventListener('load', ()=>{
 
 	formulario.addEventListener('submit', function(){
 		console.log("Evento submit capturado");
+		
 	
 	
 		var nombre = document.querySelector("#nombre").value;
