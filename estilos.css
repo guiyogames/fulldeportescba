@@ -78,6 +78,7 @@ textarea {
   max-width: 298px;
   min-height: 100px;
   max-height: 200px;
+  background: #fff;
 }
 
 .p_error{
