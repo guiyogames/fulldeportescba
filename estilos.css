@@ -93,6 +93,7 @@ input[type="submit"] {
   padding-inline-end: 20px;
   margin-block-end: 20px;
   background: #ccc;
+  padding-left: 20px;
  
 }
 /* clase del div */
@@ -165,7 +166,7 @@ h3 {
   height: 130px;
 }
 
-/* Ul página otros*/
+/* Ul página productos*/
 
 ul {
   text-align: center;
@@ -287,6 +288,8 @@ align-items: center; */
   align-items: center;
   grid-area: footer;
 }
+
+
 /* con los media query adaptamos hacemos el responsivo */
 @media screen and (max-width: 768px) {
   .contenedor {
@@ -298,6 +301,22 @@ align-items: center; */
       "widgets-2  widgets-2  widgets-2"
       "footer      footer    footer";
   }
+
+    /*ul li principal en bloque  */
+  @media screen and (max-width:450px) {
+
+    .ul .li {
+      display: block;
+      font-size: 22px;
+      margin: 20px 20px 20px 20px;
+      justify-content: center;
+      align-items: center;
+      border-bottom: thin solid #12203e;
+    }
+    
+    
+  }
+ 
 /* foto deportistas */
   .sport_boys{
     width: 320px;
@@ -348,6 +367,17 @@ align-items: center; */
     padding-right: 40px;
     border-radius: 5px;
   }
+    /* botón */
+  input[type="submit"] {
+    width: 60%;
+    height: 22px;
+    border: 1px solid #12203e;
+    margin-block-end: 20px;
+    background: #ccc;
+    padding-left: 20px;
+   
+  }
+
 
   textarea {
     width: 60%;
@@ -359,4 +389,6 @@ align-items: center; */
   }
 
 
+
 }
+
