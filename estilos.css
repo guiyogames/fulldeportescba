@@ -11,43 +11,35 @@ body {
   font-family: "Roboto", "san-serif";
 }
 
-/* Barra de navegación */
-.ul {
-  text-decoration: none;
-  text-align: center;
-  
+
+nav ul{
+  float: right;
+  margin-right: 20px;
 }
 
-.ul .li {
-  
+nav ul li{
   display: inline-block;
-  font-size: 22px;
-  margin: 20px 20px 20px 20px;
-  justify-content: center;
-  align-items: center;
+  /* line-height: 80px; */
+  margin: 0 5px;
   border-bottom: thin solid #12203e;
-  
+
 }
 
-.ul .li a {
-    padding:10px 20px;
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    
-    
-  
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 3;
+
 }
 
-/* poner el hover */
-.ul .li a:hover {
- font-size: 24px;
- color: rgb(207, 78, 78);
- transition: all ease-in-out 0.6s; 
- 
-  
-  
+a.active,a:hover{
+  color: #ccc;
+  transition: .5s;
 }
+
 
 
 h1 {
@@ -103,13 +95,27 @@ input[type="submit"] {
   margin-block-end: 20px;
   background: #ccc;
   padding-left: 20px;
- 
+
+}
+
+/* Titulo del head */
+.full{
+  text-align: left;
+  font-size: 35px;
+  
+}
+/* imagen del banner */
+.logo{
+ width: 80px;
+ height: 80px;
+ padding-top: 20px;
+
 }
 /* clase del div */
 .img_1 {
   text-align: center;
   align-items: center;
-  
+
 }
 /* foto deportistas */
 .sport_boys{
@@ -154,7 +160,7 @@ h3 {
   font-size: 18px;
   text-align: center;
   border-bottom: thin solid #eee;
-  
+
 }
 /* parrafo de imagen */
 .zapas_2 {
@@ -162,7 +168,7 @@ h3 {
   font-size: 18px;
   text-align: center;
   border-bottom: thin solid #eee;
-  
+
 }
 /* foto fútbol */
 .futbol {
@@ -177,19 +183,19 @@ h3 {
 
 /* Ul página productos*/
 
-ul {
+ .div ul {
   text-align: center;
   list-style: none;
- 
+
 }
 
 
-ul li {
+.div ul li {
   display: block;
   padding-block-end: 20px;
   border-bottom: thin solid #eee;
 }
-ul li a {
+.div ul li a {
   text-decoration: none;
   color: #000;
 }
@@ -239,9 +245,14 @@ p{
 }
 /* Css para encabezado */
 .contenedor .header {
+  width: 96.5%;
+  height: 130px;
   background: #12203e;
   color: #fff;
   grid-area: header;
+  /* background-image: url(imagenes/karate.jpg); */
+  background-repeat: no-repeat;
+
 }
 /* Dos columnas al contenido */
 /* colocamos un width: 90% para fijar el responsive */
@@ -266,7 +277,7 @@ p{
   /* align-items: center;
     justify-content: center; */
 }
-/* display: flex; text-align: center; justify-content: 
+/* display: flex; text-align: center; justify-content:
 center; align-items: center; (centra contenido)*/
 .contenedor .widgets-1,
 .contenedor .widgets-2 {
@@ -299,104 +310,6 @@ align-items: center; */
 }
 
 
-/* con los media query adaptamos hacemos el responsivo */
-@media screen and (max-width: 768px) {
-  .contenedor {
-    grid-template-areas:
-      "header     header     header"
-      "contenido  contenido  contenido"
-      "sidebar    sidebar    sidebar "
-      "widgets-1  widgets-1  widgets-1"
-      "widgets-2  widgets-2  widgets-2"
-      "footer      footer    footer";
-  }
-
-    /*ul li principal en bloque  */
-  @media screen and (max-width:450px) {
-
-    .ul .li {
-      display: inline-block;
-      font-size: 18px;
-      margin: 20px 20px 20px 20px;
-      justify-content: center;
-      align-items: center;
-      
-    }
-    
-  }
- 
-/* foto deportistas */
-  .sport_boys{
-    width: 320px;
-    height: 220px;
-  }
-/* nosotros */
-  .img2 {
-    width: 320px;
-    height: 220px;
-  }
-  /* zapatillas */
-  .img {
-    width: 200px;
-    height: 150px;
-  }
-/* artículos deportivos */
-  .img3{
-    width: 150px;
-    height: 150px;
-  }
- 
-  /* foto fútbol */
-  .futbol {
-    width: 130px;
-    height: 120px;
-  }
-  /* foto basket */
-  .basket {
-    width: 120px;
-    height: 120px;
-  }
-
-  .img4{
-    width: 110px;
-    height: 100px;
-  }
-
-  /* adaptamos formulario */
-  .form {
-    background: rgb(231, 231, 231);
-    font-size: 15px;
-    width: 63%;
-    height: 75%;
-    margin: 20px 20px 20px 20px;
-    padding-top: 20px;
-    /* padding-block-end: 10px; */
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 5px;
-  }
-    /* botón */
-  input[type="submit"] {
-    width: 60%;
-    height: 22px;
-    border: 1px solid #12203e;
-    margin-block-end: 20px;
-    background: #ccc;
-    padding-left: 20px;
-   
-  }
 
 
-  textarea {
-    width: 60%;
-    height: 100px;
-    min-width: 220px;
-    max-width: 298px;
-    min-height: 100px;
-    max-height: 200px;
-  }
-
-
-
-}
 

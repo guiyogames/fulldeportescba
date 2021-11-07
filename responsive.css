@@ -1,0 +1,117 @@
+/* parte adaptable */
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+      grid-template-areas:
+        "header     header     header"
+        "contenido  contenido  contenido"
+        "sidebar    sidebar    sidebar "
+        "widgets-1  widgets-1  widgets-1"
+        "widgets-2  widgets-2  widgets-2"
+        "footer      footer    footer";
+    }
+  
+      /*banner header  */
+  
+      nav ul{
+        float: left;
+        margin-right: 20px;
+      }
+  
+      nav ul li{
+        height: 30px;
+        display: block;
+        line-height: 50px;
+        margin: 0 5px;
+        border-bottom: thin solid #12203e;
+  
+      }
+  
+      .contenedor .header {
+        width: 96.5%;
+        height: 170px;
+        background: #12203e;
+        color: #fff;
+        grid-area: header;
+        background-repeat: no-repeat;
+      
+      }
+  
+  
+  /* foto deportistas */
+    .sport_boys{
+      width: 320px;
+      height: 220px;
+    }
+  /* nosotros */
+    .img2 {
+      width: 320px;
+      height: 220px;
+    }
+    /* zapatillas */
+    .img {
+      width: 200px;
+      height: 150px;
+    }
+  /* artículos deportivos */
+    .img3{
+      width: 150px;
+      height: 150px;
+    }
+  
+    /* foto fútbol */
+    .futbol {
+      width: 130px;
+      height: 120px;
+    }
+    /* foto basket */
+    .basket {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .img4{
+      width: 110px;
+      height: 100px;
+    }
+  
+    /* adaptamos formulario */
+    .form {
+      background: rgb(231, 231, 231);
+      font-size: 15px;
+      width: 63%;
+      height: 75%;
+      margin: 20px 20px 20px 20px;
+      padding-top: 20px;
+      /* padding-block-end: 10px; */
+      padding-left: 40px;
+      padding-right: 40px;
+      border-radius: 5px;
+    }
+      /* botón */
+    input[type="submit"] {
+      width: 60%;
+      height: 22px;
+      border: 1px solid #12203e;
+      margin-block-end: 20px;
+      background: #ccc;
+      padding-left: 20px;
+  
+    }
+  
+  
+    textarea {
+      width: 60%;
+      height: 100px;
+      min-width: 220px;
+      max-width: 298px;
+      min-height: 100px;
+      max-height: 200px;
+    }
+  
+  
+  
+  }
+  
+  
+  
