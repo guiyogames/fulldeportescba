@@ -270,7 +270,7 @@ p{
 /* colocamos un width: 90% para fijar el responsive */
 .contenedor .contenido {
   grid-area: contenido;
-  width: 90%;
+  width: 94%;
   color: #000;
   font-size: 20px;
   display: block;
