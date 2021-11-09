@@ -4,10 +4,11 @@
 }
 
 body {
-  background-image: url(imagenes/estadio_grande.jpg);
-  /* background-position: center;
-  background-repeat: no-repeat; */
-  color: #000;
+  background-image: url(imagenes/estadio_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   color: #000;
   font-family: "Roboto", "san-serif";
 }
 
@@ -60,16 +61,18 @@ h1 {
 }
 
 input[type="text"],[type="number"] {
+  margin-bottom: 20px;
+  padding:5px;
   width: 60%;
-  height: 22px;
   border: 1px solid #12203e;
+  
 }
 
 label {
   width: 60%;
-  height: 22px;
   font-family: Arial, Helvetica;
   font-size: 16px;
+
 }
 
 textarea {
@@ -84,19 +87,29 @@ textarea {
 
 .p_error{
  font-size: 16px;
+ margin-bottom: 20px;
 }
 
 /* boton de envío */
 input[type="submit"] {
   width: 60%;
-  height: 22px;
+  padding: 5px;
   border: 1px solid #12203e;
   padding-inline-end: 20px;
   margin-block-end: 20px;
   background: #ccc;
   padding-left: 20px;
+  cursor: pointer;
 
 }
+
+input:hover[type="submit"]{
+    background: #fff;
+    font-weight: bold;
+    
+}
+
+
 
 /* Titulo del head */
 .full{
@@ -250,7 +263,6 @@ p{
   background: #12203e;
   color: #fff;
   grid-area: header;
-  /* background-image: url(imagenes/karate.jpg); */
   background-repeat: no-repeat;
 
 }
@@ -273,12 +285,9 @@ p{
   grid-area: sidebar;
   color: #000;
   font-size: 20px;
-  /* text-align:left; */
-  /* align-items: center;
-    justify-content: center; */
+
 }
-/* display: flex; text-align: center; justify-content:
-center; align-items: center; (centra contenido)*/
+
 .contenedor .widgets-1,
 .contenedor .widgets-2 {
   /* background: #55a8fd; */
